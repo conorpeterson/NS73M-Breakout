@@ -1,0 +1,14 @@
+NS73M-Breakout Bill Of Materials
+Prepared by Conor Peterson (conor.p.peterson@gmail.com)
+May 3, 2017
+
+
+| Schem. Ref | Spec          | Manu               | Manu Part        | Digikey #    |
+| C1         | 22uF 10v      | Panasonic          | EEE-FK1A220R     | PCE3774CT-ND |
+| Y1         | 32.768 kHz    | Citizen Finedevice | CFS-20632768DZBB | 300-8301-ND  |
+| U1         | RF Xmitter    | Niigata Seimitsu   | NS73M            | N/A          |
+| P1         | .100" x 9 pos | Sullins Connector  | PEC09SFAN        | S1212E-09-ND |
+
+Note: for runs of 5 or more, substitute P1 for 40-position breakway header.
+Example: Sullins Connector Solutions PRPC040SAAN-RC, Digikey #S1011EC-40-ND
+
