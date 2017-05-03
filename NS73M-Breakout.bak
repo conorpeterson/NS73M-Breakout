@@ -1,0 +1,222 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ns73m
+LIBS:NS73M-Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "NS73M-Breakout"
+Date "2017-05-02"
+Rev "1"
+Comp "Conor Peterson"
+Comment1 "conor.p.peterson@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NS73M U?
+U 1 1 590901B3
+P 6010 3790
+F 0 "U?" H 5760 3050 60  0000 C CNN
+F 1 "NS73M" H 6160 3050 60  0000 C CNN
+F 2 "" H 6010 3140 60  0001 C CNN
+F 3 "" H 6010 3140 60  0001 C CNN
+	1    6010 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y?
+U 1 1 590901E6
+P 6860 3470
+F 0 "Y?" V 6980 3590 50  0000 C CNN
+F 1 "32.768 KHz" V 7060 3770 50  0000 C CNN
+F 2 "" H 6860 3470 50  0000 C CNN
+F 3 "" H 6860 3470 50  0000 C CNN
+	1    6860 3470
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 59090277
+P 6010 4820
+F 0 "C?" H 6130 4820 50  0000 L CNN
+F 1 "22uF" H 6280 4820 50  0000 L CNN
+F 2 "" H 6010 4820 50  0000 C CNN
+F 3 "" H 6010 4820 50  0000 C CNN
+	1    6010 4820
+	1    0    0    -1  
+$EndComp
+Text Notes 4350 4350 0    100  ~ 0
+LIN\nRIN\nI2C\nLA\nDA\nCK\nTEB\nVCC\nGND\n
+Wire Wire Line
+	5050 3490 5320 3490
+Wire Wire Line
+	5320 3490 5320 3240
+Wire Wire Line
+	5320 3240 5510 3240
+Wire Wire Line
+	5050 3590 5390 3590
+Wire Wire Line
+	5390 3590 5390 3390
+Wire Wire Line
+	5390 3390 5510 3390
+Wire Wire Line
+	5050 3690 5460 3690
+Wire Wire Line
+	5460 3690 5460 3540
+Wire Wire Line
+	5460 3540 5510 3540
+Wire Wire Line
+	5510 3690 5510 3690
+Wire Wire Line
+	5510 3690 5510 3790
+Wire Wire Line
+	5510 3790 5050 3790
+$Comp
+L CONN_01X09 P?
+U 1 1 590904E6
+P 4850 3690
+F 0 "P?" H 4850 4190 50  0000 C CNN
+F 1 "HEADER" V 4950 3690 50  0001 C CNN
+F 2 "" H 4850 3690 50  0000 C CNN
+F 3 "" H 4850 3690 50  0000 C CNN
+	1    4850 3690
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3890 5510 3890
+Wire Wire Line
+	5510 3890 5510 3990
+Wire Wire Line
+	5050 3990 5460 3990
+Wire Wire Line
+	5460 3990 5460 4140
+Wire Wire Line
+	5460 4140 5460 4670
+Wire Wire Line
+	5460 4140 5510 4140
+Wire Wire Line
+	5050 4090 5390 4090
+Wire Wire Line
+	5390 4090 5390 4290
+Wire Wire Line
+	5390 4290 5390 4970
+Wire Wire Line
+	5390 4290 5510 4290
+$Comp
+L GND #PWR?
+U 1 1 59090A59
+P 6010 5030
+F 0 "#PWR?" H 6010 4780 50  0001 C CNN
+F 1 "GND" H 6010 4880 50  0000 C CNN
+F 2 "" H 6010 5030 50  0000 C CNN
+F 3 "" H 6010 5030 50  0000 C CNN
+	1    6010 5030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6570 4670 6570 3240
+Wire Wire Line
+	6570 3240 6510 3240
+Connection ~ 5460 4140
+Connection ~ 5390 4290
+$Comp
+L CONN_01X01 P?
+U 1 1 59090C31
+P 7130 4290
+F 0 "P?" H 7120 4190 50  0000 C CNN
+F 1 "RF_OUT" H 7350 4290 50  0000 C CNN
+F 2 "" H 7130 4290 50  0000 C CNN
+F 3 "" H 7130 4290 50  0000 C CNN
+	1    7130 4290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6510 4290 6930 4290
+Wire Wire Line
+	6510 3390 6670 3390
+Wire Wire Line
+	6670 3390 6670 3320
+Wire Wire Line
+	6670 3320 6860 3320
+Wire Wire Line
+	6510 3540 6670 3540
+Wire Wire Line
+	6670 3540 6670 3620
+Wire Wire Line
+	6670 3620 6860 3620
+Wire Wire Line
+	6510 3990 6860 3990
+Wire Wire Line
+	6860 4970 6860 3990
+Wire Wire Line
+	6860 3990 6860 3620
+Connection ~ 6860 3990
+Wire Wire Line
+	5390 4970 6010 4970
+Wire Wire Line
+	6010 4970 6860 4970
+Wire Wire Line
+	5460 4670 6010 4670
+Wire Wire Line
+	6010 4670 6570 4670
+Connection ~ 6010 4670
+Wire Wire Line
+	5050 3390 5250 3390
+Wire Wire Line
+	5250 3390 5250 3070
+Wire Wire Line
+	5250 3070 7440 3070
+Wire Wire Line
+	7440 3070 7440 3840
+Wire Wire Line
+	7440 3840 6510 3840
+Wire Wire Line
+	5050 3290 5180 3290
+Wire Wire Line
+	5180 3290 5180 3000
+Wire Wire Line
+	5180 3000 7510 3000
+Wire Wire Line
+	7510 3000 7510 3770
+Wire Wire Line
+	7510 3770 6740 3770
+Wire Wire Line
+	6740 3770 6740 3690
+Wire Wire Line
+	6740 3690 6510 3690
+Wire Wire Line
+	6010 5030 6010 4970
+Connection ~ 6010 4970
+$EndSCHEMATC
