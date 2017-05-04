@@ -1,6 +1,7 @@
 ![image](pcb-front.png)
 # NS73M-Breakout
 2017 Conor Peterson (conor.p.peterson@gmail.com)
+
 License: Creative Commons Attribution International 4.0 (CC-BY-4.0)
 
 This is a breakout board for the Niigata Seimitsu NS73M FM transmitter chip. It
@@ -10,6 +11,7 @@ capacitor. Build note: the solder pad under the crystal body is intended to help
 mechanically secure the package. 
 
 Dimensions: 25mm x 17mm
+
 Layers: 2
 
 ## Bill of Materials
@@ -23,6 +25,3 @@ Layers: 2
 
 _Note: for runs of 5 or more, substitute P1 for 40-position breakway header
 (e.g. Sullins Connector Solutions PRPC040SAAN-RC, Digikey #S1011EC-40-ND or similar)_
-
-![image](pcb-reverse.png)
-![image](pcb-plot.png)
