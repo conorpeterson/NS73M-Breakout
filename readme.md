@@ -1,4 +1,4 @@
-![image](pcb-front.png)
+![PCB Photo](ns73pcb_10.png)
 # NS73M-Breakout
 2017 Conor Peterson (conor.p.peterson@gmail.com)
 
